@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Arimo', sans-serif;
 }
 
 nav{
@@ -163,4 +164,96 @@ nav{
 }
 .job-title{
     color: grey;
+}
+
+.price h1{
+    font-family: 'Arimo', sans-serif;
+    font-weight: 900;
+    display:flex;
+    flex-direction: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 8px;
+}
+.offer{
+    font-family: 'Arimo', sans-serif;
+    font-size: .75rem;
+    display: flex;
+    justify-content: center;
+    color: grey;
+    margin-bottom: 30px;
+}
+
+.price-card{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    gap:20px;
+}
+
+.normal{
+    background-color: white;
+    border:1px solid #0f49e7;
+    padding:30px;
+    border-radius: 16px;
+}
+.price-info{
+    padding: 10px 10px 20px;
+}
+
+.underline{
+    color:grey;
+    padding:8px;
+}
+
+.facility{
+    padding: 30px;
+}
+
+ul li::marker {
+  color: blue;
+}
+
+li{
+    padding:8px;
+}
+
+.button-wrapper{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.normal-button{
+    background-color: white;
+    color:#0f49e7;
+    border: 2px solid #0f49e7;
+    border-radius: 10px;
+    height: 50px;
+    width:90%;
+    font-weight:700;
+    font-size:1.05rem;
+}
+.plan{
+    text-transform: uppercase;
+    padding:8px;
+    color:grey;
+}
+
+.cost{
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.per-person{
+    color:grey;
+    font-size:.8rem;
+}
+
+.special{
+    background-color: black;
+    color:white;
+    border:1px solid #0f49e7;
+    padding:30px;
+    border-radius: 16px;
 }
