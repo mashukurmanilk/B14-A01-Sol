@@ -337,3 +337,118 @@ nav{
   border: 1px solid #1f2937;
   color: #1f2937;
 }
+
+/* ========== ELEVATE / AI SECTION ========== */
+.ai-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+/* Background image — fills the whole section */
+.ai-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+}
+
+/* Woman image — centered on top of the background */
+.ai-woman {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 90%;
+    width: auto;
+    object-fit: contain;
+    z-index: 1;
+}
+
+/* Text container — sits above both images */
+.ai-text {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+/* "ELEVATE" — massive, bold, blend white on woman / black on bg */
+.elevate-word {
+    font-size: clamp(80px, 14vw, 180px);
+    font-weight: 900;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    color: #ffffff;
+    mix-blend-mode: difference;
+    text-align: center;
+}
+
+/* Subtitle — smaller but still bold */
+.elevate-sub {
+    font-size: clamp(16px, 2.5vw, 32px);
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #ffffff;
+    mix-blend-mode: difference;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.site-footer {
+    background-color: #f9f9f9;
+    padding: 30px 40px 20px;
+    border-top: 1px solid #ddd;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    height: 35px;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 16px;
+}
+
+.social-link {
+    color: #333;
+    text-decoration: none;
+}
+
+.social-link svg {
+    width: 20px;
+    height: 20px;
+}
+
+
+.footer-divider {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin-bottom: 16px;
+}
+
+.footer-copyright {
+    font-size: 0.9rem;
+    text-align: center;
+    color: #888;
+}
